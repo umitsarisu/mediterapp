@@ -26,7 +26,7 @@
                 <div class="card-body">
                     <div class="text-center ">
                         <img :src="sparePart.imgUrl" class="card-img-top img img-thumbnail" :alt="sparePart.alt">
-                        <h3 class="partName align-content-center">{{ sparePart.name }}</h3>
+                        <h3 class="partName align-content-center text-dark">{{ sparePart.name }}</h3>
                         <p class="fw-bold" name="ydkCode">{{ sparePart.code }}</p>
                         <hr>
                         <p name="ydkCode">{{ sparePart.model }}</p>
@@ -112,8 +112,8 @@ span {
 }
 
 .partName {
-    color: #fff200;
-    text-shadow: black 2px 1px 5px;
+    /* color: #34495e; */
+    text-shadow: #4c0000 1px 1px 2px;
     /* padding: 15px; */
     height: 60px;
     font-size: 1.4em;

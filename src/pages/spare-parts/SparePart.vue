@@ -2,7 +2,7 @@
     <div class="container position-relative">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-8 ">
-                <form class="shadow" @submit.prevent="this.id ? updatePart() : savePart()">
+                <form class="pt-1" @submit.prevent="this.id ? updatePart() : savePart()">
                     <i v-if="!this.sparePart.imgUrl" class="fa fa-wrench fa-5x text-center img-thumbnail shadow"
                         style="line-height: 200px;"></i>
                     <img v-if="this.sparePart.imgUrl" :src="this.sparePart.imgUrl" :alt="'(' + sparePart.name + ')'"
@@ -17,7 +17,7 @@
                                 {{ error }}
                             </div>
                             <hr>
-                            <div class=" input-group justify-content-evenly">
+                            <div class="input-group justify-content-evenly">
                                 <label class="input-group-text" for="name">Parça Adı: </label>
                                 <input class="form-control" type="text" id="name" v-model.trim="sparePart.name" required>
                             </div>
@@ -216,6 +216,9 @@ export default {
 }
 </script>
 <style scoped>
+form {
+    background-color:#e9ecef;
+}
 img,
 i {
     width: 200px;

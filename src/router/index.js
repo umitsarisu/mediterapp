@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 // import CopyPaste from "../pages/copy-paste/CopyPaste.vue"
 // import CurrentCodes from "../pages/current-codes/CurrentCodes.vue"
 // import RunInForm from "../pages/forms/RunInForm.vue"
