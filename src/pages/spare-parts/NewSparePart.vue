@@ -173,7 +173,7 @@ export default {
         },
         updatePart() {
             if (this.imageUrl) {
-                uploadImage()
+                this.uploadImage()
             }
             updateDoc(this.docRef, { ...this.sparePart })
             this.alert();
@@ -217,8 +217,9 @@ export default {
 </script>
 <style scoped>
 form {
-    background-color:#e9ecef;
+    background-color: #e9ecef;
 }
+
 img,
 i {
     width: 200px;

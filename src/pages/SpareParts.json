@@ -10,7 +10,7 @@
       "alt": "(Front Case) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Rear Case",
@@ -40,61 +40,61 @@
       "name": "Asm Door",
       "code": "YDK-841-12388-001",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Kaset kapağı asmdoor",
       "count": 0,
       "alt": "(Asm Door) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Shield",
       "code": "YDK-840-95012-016",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Sıvı kalkanı shield",
       "count": 0,
       "alt": "(Shield) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Keypad TR",
       "code": "YDK-840-95015-017",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Türkçe tuş takımı",
       "count": 0,
       "alt": "(Keypad TR) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Keypad EN",
       "code": "YDK-840-95015-008",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "İngilizce tuş takımı",
       "count": 0,
       "alt": "(Keypad EN) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Handle Door",
       "code": "YDK-712-95076-001",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Kaset kolu",
       "count": 0,
       "alt": "(Handle Door) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Battery Door",
@@ -112,7 +112,7 @@
       "name": "Retainer Cord",
       "code": "YDK-712-95065-006",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Power kablo tutucu retainer cord",
       "count": 0,
       "alt": "(Retainer Cord) ",
@@ -142,13 +142,13 @@
       "alt": "(Shoe Front Enclosure) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Pole Clamp Assembly",
       "code": "YDK-840-95115-003",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Demirli sıkma kolu",
       "count": 0,
       "alt": "(Pole Clamp Assembly) ",
@@ -160,7 +160,7 @@
       "name": "Pole Clamp Knob",
       "code": "YDK-820-95443-008",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Demirsiz sıkma kolu",
       "count": 0,
       "alt": "(Pole Clamp Knob) ",
@@ -172,7 +172,7 @@
       "name": "Bag Hanger",
       "code": "YDK-707-95092-001",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Askı demiri",
       "count": 0,
       "alt": "(Bag Hanger) ",
@@ -189,9 +189,10 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(Power PWA) ",
-      "test": "other",
+      "test": "",
       "activeClass": "bg-light",
-      "isSerial": true
+      "isSerial": true,
+      "viCode": ""
     },
     {
       "name": "Knob Gray 1/8",
@@ -237,8 +238,9 @@
       "explanation": "Pole clamp parçası",
       "count": 0,
       "alt": "(Plate Backing Pole Clamp) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Nut 1/4 Hex",
@@ -248,8 +250,9 @@
       "explanation": "Peripheral parçası",
       "count": 0,
       "alt": "(Nut 1/4 Hex) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Ring Retainer",
@@ -271,8 +274,9 @@
       "explanation": "Peripheral parçası",
       "count": 0,
       "alt": "(Washer Shldr #4 Nylon) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Housing Front",
@@ -284,7 +288,7 @@
       "alt": "(Housing Front) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Housing Back",
@@ -314,37 +318,37 @@
       "name": "Asm Door",
       "code": "YDK-840-94850-407",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Kaset kapağı asmdoor",
       "count": 0,
       "alt": "(Asm Door) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Shield",
       "code": "YDK-840-94852-404",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Sıvı kalkanı",
       "count": 0,
       "alt": "(Shield) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Handle Door",
       "code": "YDK-712-94858-405",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Kaset kolu",
       "count": 0,
       "alt": "(Handle Door) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Battery Door",
@@ -362,7 +366,7 @@
       "name": "Retainer Cord",
       "code": "YDK-712-95065-407",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Power kablo tutucu",
       "count": 0,
       "alt": "(Retainer Cord) ",
@@ -374,7 +378,7 @@
       "name": "Pole Clamp Knob",
       "code": "YDK-840-94075-402",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Sıkma kolu",
       "count": 0,
       "alt": "(Pole Clamp Knob) ",
@@ -398,24 +402,25 @@
       "name": "Keypad",
       "code": "YDK-840-97669-401",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Tuş takımı",
       "count": 0,
       "alt": "(Keypad) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Pressure Dedector",
       "code": "YDK-SUB0000538",
       "model": "Mekanizma",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Basınç sensörü strain gauge",
       "count": 0,
       "alt": "(Pressure Dedector) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "App PWA",
@@ -426,33 +431,36 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(App PWA) ",
-      "test": "other",
+      "test": "",
       "activeClass": "bg-light",
-      "isSerial": true
+      "isSerial": true,
+      "viCode": ""
     },
     {
       "name": "Mechanism",
       "code": "YDK-855-95004-010",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Mekanizma",
       "count": 0,
       "alt": "(Mechanism) ",
-      "test": "other",
+      "test": "",
       "activeClass": "bg-light",
-      "isSerial": true
+      "isSerial": true,
+      "viCode": ""
     },
     {
       "name": "Mechanism Plum 360",
       "code": "YDK-855-95715-015",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Plum 360 mekanizma",
       "count": 0,
       "alt": "(Mechanism Plum 360) ",
-      "test": "other",
+      "test": "",
       "activeClass": "bg-light",
-      "isSerial": true
+      "isSerial": true,
+      "viCode": ""
     },
     {
       "name": "Driver PWA",
@@ -463,42 +471,46 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(Driver PWA) ",
-      "test": "other",
+      "test": "",
       "activeClass": "bg-light",
-      "isSerial": true
+      "isSerial": true,
+      "viCode": ""
     },
     {
       "name": "L/S Motor",
       "code": "YDK-830-95101-001",
       "model": "Mekanizma",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Sol motor",
       "count": 0,
       "alt": "(L/S Motor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "I/O Motor",
       "code": "YDK-830-95102-001",
       "model": "Mekanizma",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Alt motor",
       "count": 0,
       "alt": "(I/O Motor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Plunger Motor",
       "code": "YDK-830-95097-002",
       "model": "Mekanizma",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Arka motor",
       "count": 0,
       "alt": "(Plunger Motor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Switch PWA",
@@ -508,8 +520,9 @@
       "explanation": "Yan kart",
       "count": 0,
       "alt": "(Switch PWA) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
 
     {
@@ -522,7 +535,7 @@
       "alt": "(Display) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "CPU",
@@ -533,8 +546,9 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(CPU) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Power PWA",
@@ -545,8 +559,9 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(Power PWA) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Peripheral PWA",
@@ -557,8 +572,9 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(Peripheral PWA) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Bom PWA Common A+ CE3",
@@ -568,30 +584,33 @@
       "explanation": "Peripheral parçası",
       "count": 0,
       "alt": "(Bom PWA Common A+ CE3) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Battery",
       "code": "YDK-840-95066-405",
       "model": "Genel",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Batarya",
       "count": 0,
       "alt": "(Battery) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Piezo Alarm",
       "code": "YDK-830-03329-506",
       "model": "Genel",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Hoparlör",
       "count": 0,
       "alt": "(Piezo Alarm) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pwa Antenna Plum CE3.0, SNGL CH",
@@ -601,8 +620,9 @@
       "explanation": "Anten",
       "count": 0,
       "alt": "(Pwa Antenna Plum CE3.0, SNGL CH) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
 
     {
@@ -649,8 +669,9 @@
       "explanation": "switch pwa kablosu beyaz",
       "count": 0,
       "alt": "(Cable Flat 8 Cond) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Cable Flat 20 Cond",
@@ -660,8 +681,9 @@
       "explanation": "Mekanizma üstteki beyaz kablo",
       "count": 0,
       "alt": "(Cable Flat 20 Cond) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Cable Flex 14 Conductor",
@@ -671,8 +693,9 @@
       "explanation": "Cpu, beyaz kablo",
       "count": 0,
       "alt": "(Cable Flex 14 Conductor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Asm Cable Power Sply/Btry",
@@ -682,8 +705,9 @@
       "explanation": "Power batarya arasındaki kablo",
       "count": 0,
       "alt": "(Asm Cable Power Sply/Btry) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Cpu Driver",
@@ -693,8 +717,9 @@
       "explanation": "Cpu mechanism gri kablo",
       "count": 0,
       "alt": "(Cpu Driver) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Asm Cable Motor Power",
@@ -704,8 +729,9 @@
       "explanation": "Power mechanism kırmızı kablo",
       "count": 0,
       "alt": "(Asm Cable Motor Power) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Asm Cable Battery",
@@ -715,8 +741,9 @@
       "explanation": "Batarya kablosu",
       "count": 0,
       "alt": "(Asm Cable Battery) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Power Kablo",
@@ -738,8 +765,9 @@
       "explanation": "Üstteki beyaz kablo demiri",
       "count": 0,
       "alt": "(Filter Gm1 Rbn Ca) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Cap Vinyl 1/2 Long Blk",
@@ -773,8 +801,9 @@
       "explanation": "Üstteki valf pinleri",
       "count": 0,
       "alt": "(Valve Pin P/S Valve) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Valve Pins I/O Valve",
@@ -784,8 +813,9 @@
       "explanation": "Alttaki valf pinleri",
       "count": 0,
       "alt": "(Valve Pins I/O Valve) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Tip Shaft Pole Clamp",
@@ -807,8 +837,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Sft Opener Regulator) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Rocker Regulator Opener",
@@ -818,8 +849,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Rocker Regulator Opener) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Rocker Regulator Closer",
@@ -841,8 +873,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Cam Stac, Pri) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Cam Stac, I/O",
@@ -852,8 +885,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Cam Stac, I/O) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Support Pri/Sec Valve",
@@ -863,8 +897,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Support Pri/Sec Valve) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Rocker Pri Valve",
@@ -874,8 +909,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Rocker Pri Valve) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Rocker Sec Valve",
@@ -885,8 +921,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Rocker Sec Valve) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Rkr Inlet Valve (CC",
@@ -896,8 +933,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Rkr Inlet Valve (CC)) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Rkr Outlet Valve",
@@ -907,8 +945,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Rkr Outlet Valve) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Sprt Bot Spr",
@@ -918,8 +957,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Sprt Bot Spr) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Bshg Mot",
@@ -929,8 +969,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Bshg Mot) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Bumper Chassis",
@@ -940,8 +981,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Bumper Chassis) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Housing Clutch",
@@ -963,8 +1005,9 @@
       "explanation": "Pole Clamp kasa parçaları",
       "count": 0,
       "alt": "(Bracket Pole Clamp) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Lever Cover",
@@ -974,8 +1017,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Lever Cover) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Proximal Tubing Guide",
@@ -987,7 +1031,7 @@
       "alt": "(Proximal Tubing Guide) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Cover USB Ce3.0",
@@ -1017,7 +1061,7 @@
       "name": "Cover Antennal Lcm CE 3.0",
       "code": "YDK-712-94866-402",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Peripheral parçaları",
       "count": 0,
       "alt": "(Cover Antennal Lcm CE 3.0) ",
@@ -1033,8 +1077,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Plate Clmpg Pressure Sensor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Tip Distal Pressure Sensor",
@@ -1044,8 +1089,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Tip Distal Pressure Sensor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Spcr Pressure Sensor",
@@ -1055,8 +1101,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Spcr Pressure Sensor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Block Pressure Sensor",
@@ -1066,8 +1113,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Block Pressure Sensor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "O-Ring Pressure Sensor",
@@ -1077,8 +1125,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(O-Ring Pressure Sensor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Lever Door",
@@ -1088,8 +1137,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Lever Door) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Cap Switch Pwa",
@@ -1099,8 +1149,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Cap Switch Pwa) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Opener Regulator",
@@ -1110,8 +1161,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Opener Regulator) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Closer Regulator",
@@ -1121,8 +1173,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Closer Regulator) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pivot",
@@ -1132,8 +1185,9 @@
       "explanation": "Turuncu parça",
       "count": 0,
       "alt": "(Pivot) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pl Rear Mech",
@@ -1143,8 +1197,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Pl Rear Mech) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Plunger",
@@ -1154,8 +1209,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Plunger) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Retainer Plunger",
@@ -1165,8 +1221,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Retainer Plunger) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Body Coupler",
@@ -1176,8 +1233,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Body Coupler) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Nest Coupler",
@@ -1187,8 +1245,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Nest Coupler) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Shaft Ext Coupler",
@@ -1198,8 +1257,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Shaft Ext Coupler) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Link Door",
@@ -1209,8 +1269,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Link Door) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Clip Hairpin",
@@ -1232,8 +1293,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Shoe I/O Rocker) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Bracket Handle",
@@ -1243,8 +1305,9 @@
       "explanation": "Pole clamp parçası siyah",
       "count": 0,
       "alt": "(Bracket Handle) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
 
     {
@@ -1255,8 +1318,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Plate Dampening Rear) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Bracket Rear Plate Right",
@@ -1266,8 +1330,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Bracket Rear Plate Right) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Bracket Rear Plate Left",
@@ -1277,8 +1342,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Bracket Rear Plate Left) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Clip Regulator Closer",
@@ -1288,8 +1354,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Clip Regulator Closer) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pin Prox/Distal Pressure Sensor",
@@ -1299,8 +1366,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Pin Prox/Distal Pressure Sensor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Retainer Pressure Sensor",
@@ -1310,8 +1378,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Retainer Pressure Sensor) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pin Fixed Cassette Locator",
@@ -1321,8 +1390,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Pin Fixed Cassette Locator) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pad Handle Door Stop",
@@ -1332,8 +1402,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Pad Handle Door Stop) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pad Dampening Rear Plate",
@@ -1343,8 +1414,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Pad Dampening Rear Plate) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Vibraiton Isolator",
@@ -1354,8 +1426,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Vibraiton Isolator) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Sprinf Inlet Valveleaf",
@@ -1365,8 +1438,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Sprinf Inlet Valveleaf) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Spring Outlet Valve Leaf (CCLT",
@@ -1376,8 +1450,9 @@
       "explanation": "Mekanizma parçaları",
       "count": 0,
       "alt": "(Spring Outlet Valve Leaf (CCLT)) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Spring Extension 0.063 DIA, 0.25 LG",
@@ -1387,8 +1462,9 @@
       "explanation": "Plunger küçük yay",
       "count": 0,
       "alt": "(Spring Extension 0.063 DIA, 0.25 LG) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Spring Skt Extension 1.0 LSS",
@@ -1398,8 +1474,9 @@
       "explanation": "Handle door yayı",
       "count": 0,
       "alt": "(Spring Skt Extension 1.0 LSS) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "SPRING, STK, EXTENSION, 0.180 DIA, SS",
@@ -1409,8 +1486,9 @@
       "explanation": "Plunger yayı",
       "count": 0,
       "alt": "(SPRING, STK, EXTENSION, 0.180 DIA, SS) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Pri/Sec Valve Leaf Spring",
@@ -1420,8 +1498,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Pri/Sec Valve Leaf Spring) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Spring Cassette Guide",
@@ -1431,8 +1510,9 @@
       "explanation": "Asmdoor demiri",
       "count": 0,
       "alt": "(Spring Cassette Guide) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Rivet Push Plastic",
@@ -1442,30 +1522,33 @@
       "explanation": "Siyah plastik",
       "count": 0,
       "alt": "(Rivet Push Plastic) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Emi Spring Lcm CE3.0, Upper",
       "code": "YDK-717-94872-401",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Peripheral parçası",
       "count": 0,
       "alt": "(Emi Spring Lcm CE3.0, Upper) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Ring Rtng .188 x.025 SST",
       "code": "YDK-721-13112-401",
       "model": "Mekanizma",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Handle door parçası",
       "count": 0,
       "alt": "(Ring Rtng .188 x.025 SST) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Ring Rtng .312 x.025 SST",
@@ -1475,8 +1558,9 @@
       "explanation": "Plunger parçası",
       "count": 0,
       "alt": "(Ring Rtng .312 x.025 SST) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Ring Rtng 0.140 x  .015 SST",
@@ -1486,8 +1570,9 @@
       "explanation": "Handle door parçası",
       "count": 0,
       "alt": "(Ring Rtng 0.140 x  .015 SST) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
 
     {
@@ -1498,8 +1583,9 @@
       "explanation": "Makanizma parçası",
       "count": 0,
       "alt": "(Washer Cprsn .121ID .045THK STL) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Washer Flat .253 ID .050 Thk",
@@ -1521,8 +1607,9 @@
       "explanation": "?",
       "count": 0,
       "alt": "(Nut 4-40 Hex Stl Zn Sml S) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Spacer Display",
@@ -1532,8 +1619,9 @@
       "explanation": "Display parçası",
       "count": 0,
       "alt": "(Spacer Display) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Strap Velcro AC Power Cord",
@@ -1555,8 +1643,9 @@
       "explanation": "Klips",
       "count": 0,
       "alt": "(Cable Ties) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Ca Tie Plastic Adh Back RW",
@@ -1566,8 +1655,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Ca Tie Plastic Adh Back RW) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Tape Ins 3M 1350 2Mil Wht 1.5",
@@ -1577,8 +1667,9 @@
       "explanation": "Bant",
       "count": 0,
       "alt": "(Tape Ins 3M 1350 2Mil Wht 1.5) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Psa Dampening",
@@ -1588,14 +1679,15 @@
       "explanation": "mechanism parçası",
       "count": 0,
       "alt": "(Psa Dampening) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Cover IO Lcm CE3",
       "code": "YDK-730-97249-401",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Peripheral parçası siyah kauçuk",
       "count": 0,
       "alt": "(Cover IO Lcm CE3) ",
@@ -1611,8 +1703,9 @@
       "explanation": "Siyah",
       "count": 0,
       "alt": "(Insulator CPU) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Enclosure Gasket",
@@ -1622,8 +1715,9 @@
       "explanation": "Gasket",
       "count": 0,
       "alt": "(Enclosure Gasket) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Gasket Tape Switch Board",
@@ -1633,8 +1727,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Gasket Tape Switch Board) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Insulator Batt Comp",
@@ -1644,8 +1739,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Insulator Batt Comp) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Gasket Power Supply",
@@ -1655,8 +1751,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Gasket Power Supply) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Gskt Display Seal (CCLT",
@@ -1666,8 +1763,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Gskt Display Seal (CCLT)) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Tape Gskt",
@@ -1677,8 +1775,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Tape Gskt) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Insulator Lcm Ce3.0",
@@ -1688,8 +1787,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Insulator Lcm Ce3.0) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Splashguard",
@@ -1699,8 +1799,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Splashguard) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Insulator Bracket Handle",
@@ -1710,8 +1811,9 @@
       "explanation": "Siyah",
       "count": 0,
       "alt": "(Insulator Bracket Handle) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Gskt Front/Rear Enclosure",
@@ -1721,8 +1823,9 @@
       "explanation": "Gasket",
       "count": 0,
       "alt": "(Gskt Front/Rear Enclosure) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Gskt Handle",
@@ -1732,8 +1835,9 @@
       "explanation": "Gasket",
       "count": 0,
       "alt": "(Gskt Handle) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Splash Guard (Piezo",
@@ -1743,8 +1847,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Splash Guard (Piezo)) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Insulator Backing Plate",
@@ -1754,8 +1859,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Insulator Backing Plate) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Insulator Secondary",
@@ -1765,8 +1871,9 @@
       "explanation": "Siyah",
       "count": 0,
       "alt": "(Insulator Secondary) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Gskt Fluid Shield",
@@ -1776,8 +1883,9 @@
       "explanation": "Shield gasket",
       "count": 0,
       "alt": "(Gskt Fluid Shield) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Asm Coupler Body/Lead Screw",
@@ -1787,14 +1895,15 @@
       "explanation": "",
       "count": 0,
       "alt": "(Asm Coupler Body/Lead Screw) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Base W/Rubber",
       "code": "YDK-820-95542-003",
       "model": "Plum A",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Pole clamp demiri",
       "count": 0,
       "alt": "(Base W/Rubber) ",
@@ -1806,7 +1915,7 @@
       "name": "Base W/Rubber",
       "code": "YDK-820-95720-402",
       "model": "Plum 360",
-      "definition": "Diğer...",
+      "definition": "Diğer",
       "explanation": "Pole clamp demiri",
       "count": 0,
       "alt": "(Base W/Rubber) ",
@@ -1834,8 +1943,9 @@
       "explanation": "Peripheral parçası",
       "count": 0,
       "alt": "(Rivet 125 Christmas Tree Black) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 4-24 1/4 Phh Pnh Hilo 18-8sst",
@@ -1845,8 +1955,9 @@
       "explanation": "Keypad ve Asmdoor vidası",
       "count": 0,
       "alt": "(Screw 4-24 1/4 Phh Pnh Hilo 18-8sst) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw Jack 4-40, 7/16",
@@ -1868,8 +1979,9 @@
       "explanation": "Retainer Cord vidası?",
       "count": 0,
       "alt": "(Screw Lock Conn 4-40) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 6-32, 5/8, Pan Head Philips With Washer",
@@ -1879,8 +1991,9 @@
       "explanation": "Retainer Cord vidası?",
       "count": 0,
       "alt": "(Screw 6-32, 5/8, Pan Head Philips With Washer) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 6-32, X3, 1/4, Pan Head",
@@ -1890,8 +2003,9 @@
       "explanation": "Arka kapak uzun vida",
       "count": 0,
       "alt": "(Screw 6-32, X3, 1/4, Pan Head) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "SCREW, 6-32, X2, 1/2, PAN HEAD, PHILIPS",
@@ -1901,8 +2015,9 @@
       "explanation": "Plum 360 arka kapak kisa vida",
       "count": 0,
       "alt": "(SCREW, 6-32, X2, 1/2, PAN HEAD, PHILIPS) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "SCREW, 6-32, X2, 1/2, PAN HEAD, PHILIPS",
@@ -1912,8 +2027,9 @@
       "explanation": "Plum 360 arka kapak uzun vida",
       "count": 0,
       "alt": "(SCREW, 6-32, X2, 1/2, PAN HEAD, PHILIPS) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw Holds Back Case",
@@ -1923,8 +2039,9 @@
       "explanation": "Arka kapak kisa vida",
       "count": 0,
       "alt": "(Screw Holds Back Case) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 4-40, 5/8, Pan Head Philips",
@@ -1934,8 +2051,9 @@
       "explanation": "Peripheral vidası",
       "count": 0,
       "alt": "(Screw 4-40, 5/8, Pan Head Philips) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 4-40, 1/4, Hex Nylon",
@@ -1945,8 +2063,9 @@
       "explanation": "Peripheral parçaları",
       "count": 0,
       "alt": "(Screw 4-40, 1/4, Hex Nylon) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 4-40, 3/8, Button Head SS",
@@ -1956,8 +2075,9 @@
       "explanation": "Peripheral vidası",
       "count": 0,
       "alt": "(Screw 4-40, 3/8, Button Head SS) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 6-32, 3/8, Sltd Hwh Type T D",
@@ -1967,8 +2087,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Screw 6-32, 3/8, Sltd Hwh Type T D) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 4-40, 1/4, Hex Head Sltd W/Washer",
@@ -1978,8 +2099,9 @@
       "explanation": "Pivot vidası",
       "count": 0,
       "alt": "(Screw 4-40, 1/4, Hex Head Sltd W/Washer) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 6-32, 3/8, Hex Head Slotted W/Washer",
@@ -1989,8 +2111,9 @@
       "explanation": "Batarya kapağı vidası",
       "count": 0,
       "alt": "(Screw 6-32, 3/8, Hex Head Slotted W/Washer) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Emi Spring LCM CE3.0, Lower",
@@ -2000,8 +2123,9 @@
       "explanation": "Peripheral parçası",
       "count": 0,
       "alt": "(Emi Spring LCM CE3.0, Lower) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 4-40, 3/8, Inhh Sqcn Sl Sem",
@@ -2011,8 +2135,9 @@
       "explanation": "",
       "count": 0,
       "alt": "(Screw 4-40, 3/8, Inhh Sqcn Sl Sem) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw 4-20 1/4 Pan Head Philips",
@@ -2022,8 +2147,9 @@
       "explanation": "Ön kapak mor parça vidası",
       "count": 0,
       "alt": "(Screw 4-20 1/4 Pan Head Philips) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Screw M2X6 Pnh Sltd Nylon",
@@ -2033,8 +2159,9 @@
       "explanation": "Peripheral parçası",
       "count": 0,
       "alt": "(Screw M2X6 Pnh Sltd Nylon) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Serial Number Cover (Mac Address",
@@ -2058,7 +2185,7 @@
       "alt": "(Lbl Caution Intl Uk) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Ops Instr Lbl IE",
@@ -2070,7 +2197,7 @@
       "alt": "(Ops Instr Lbl IE) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Rear Caution Lbl IE",
@@ -2130,7 +2257,7 @@
       "alt": "(Lbl Set Ops/Alarms V11 Turkey) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Caution Label Turkey",
@@ -2142,7 +2269,7 @@
       "alt": "(Caution Label Turkey) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Lbl Rear Caution Turkey",
@@ -2166,7 +2293,7 @@
       "alt": "(Lbl Close Lever Turkey) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Lbl Close Lever W/Arrow Ef Trk",
@@ -2178,7 +2305,7 @@
       "alt": "(Lbl Close Lever W/Arrow Ef Trk) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Label Battery 6V",
@@ -2202,7 +2329,7 @@
       "alt": "(Label Logo) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Lbl Close Lever",
@@ -2214,7 +2341,7 @@
       "alt": "(Lbl Close Lever) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Close Lever W/Arrow",
@@ -2226,7 +2353,7 @@
       "alt": "(Close Lever W/Arrow) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Rear Caution Int'L ENG",
@@ -2250,7 +2377,7 @@
       "alt": "(Ops Instr Intl Set) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Lbl High-Low English",
@@ -2310,7 +2437,7 @@
       "alt": "(Lbl Set Tubing Guide Labels) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Lbl Power Cord",
@@ -2334,7 +2461,7 @@
       "alt": "(Lbl Door Lever) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Lbl Close Lever",
@@ -2346,7 +2473,7 @@
       "alt": "(Lbl Close Lever) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Lbl Close Clamps",
@@ -2358,7 +2485,7 @@
       "alt": "(Lbl Close Clamps) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Product Rating Label (Turkey",
@@ -2394,7 +2521,7 @@
       "alt": "(Lbl Follow Instructions For Use) ",
       "test": "visual inspection",
       "activeClass": "bg-light",
-      "viCode": "122"
+      "viCode": "121"
     },
     {
       "name": "Brg Thrust",
@@ -2402,9 +2529,11 @@
       "model": "Mekanizma",
       "definition": "Etiketler",
       "explanation": "plunger pullari",
+      "test": "",
       "count": 0,
       "alt": "(Brg Thrust) ",
-      "activeClass": "bg-light"
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Peripheral PWA",
@@ -2415,8 +2544,9 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(Peripheral PWA) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Peripheral PWA",
@@ -2427,8 +2557,9 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(Peripheral PWA) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     },
     {
       "name": "Peripheral PWA",
@@ -2439,8 +2570,9 @@
       "count": 0,
       "isSerialNumber": true,
       "alt": "(Peripheral PWA) ",
-      "test": "other",
-      "activeClass": "bg-light"
+      "test": "",
+      "activeClass": "bg-light",
+      "viCode": ""
     }
   ],
   "PUMP_TESTS": [
@@ -2460,7 +2592,8 @@
       "178": "DISTAL OCCLUSION (3-9 PSI)",
       "179": "DISTAL OCCLUSION (7-13 PSI)",
       "180": "DELIVERY ACCURACY (19ML-21ML)",
-      "181": "NURSE CALL"
+      "181": "NURSE CALL",
+      "viCode": ""
     },
     {
       "257": "TEST SETUP",
@@ -2474,7 +2607,8 @@
       "265": "ALARM LOUDNESS TEST",
       "266": "DISTAL AIR-IN-LINE TEST",
       "267": "PROXIMAL AIR-IN-LINE TEST",
-      "268": "DELIVERY ACCURACY (19-21)"
+      "268": "DELIVERY ACCURACY (19-21)",
+      "viCode": ""
     },
     {
       "246": "VISUAL INSPECTION TEST",
@@ -2514,7 +2648,8 @@
     { "code": "M05M038", "name": "Medikal Park İstanbul, Pendik" },
     {
       "code": "M03I013",
-      "name": "İstanbul Üniversitesi Rektörlüğü, Cerrahpaşa"
+      "name": "İstanbul Üniversitesi Rektörlüğü, Cerrahpaşa",
+      "viCode": ""
     },
     { "code": "M03I003", "name": "İstanbul Tıp Fakültesi, Çapa" },
     { "code": "M03I009", "name": "İstanbul Üniversitesi Onkoloji Enstitüsü" },

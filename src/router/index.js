@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import DeviceRegisterForm from "../pages/forms/DeviceRegisterForm.vue"
 import SparePartsPage from "../views/SparePartsPage"
 import SpareParts from "../pages/spare-parts/SpareParts.vue"
-import SparePart from "../pages/spare-parts/SparePart.vue"
+import NewSparePart from "../pages/spare-parts/NewSparePart.vue"
 import SignUpPage from "../views/SignUpPage.vue"
 import HomePage from "../pages/HomePage.vue"
 import CurrentCodesPage from "@/views/CurrentCodesPage"
@@ -27,8 +27,8 @@ const routes = [
     component: SparePartsPage,
     children: [
       { path: "", component: SpareParts },
-      { path: "/update/:partId", component: SparePart },
-      { path: "/new-part", component: SparePart },
+      { path: "/update/:partId", component: NewSparePart },
+      { path: "/new-part", component: NewSparePart },
     ]
   },
 
