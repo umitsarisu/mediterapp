@@ -134,7 +134,9 @@ span {
 hr {
     margin: 5px;
 }
-
+.fa{
+    font-style: italic;
+}
 .bar {
     background-color: #bea7a4;
     padding: 5px;

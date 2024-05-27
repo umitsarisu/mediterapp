@@ -23,7 +23,8 @@
                             </div>
                             <div class="input-group justify-content-evenly">
                                 <label class="input-group-text" for="code">Stok Kodu: </label>
-                                <input class="form-control" type="text" id="code" v-model.trim="sparePart.code" required>
+                                <input class="form-control" type="text" id="code" v-model.trim="sparePart.code" required
+                                    @click="copy">
                             </div>
                             <div class="input-group justify-content-evenly">
                                 <label class="input-group-text" for="model">Cihaz Modeli: </label>
@@ -89,7 +90,7 @@
 </template>
 <script>
 import { storage, db, sparePartsCollection } from "@/firebase";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { getStorage, ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
 import { addDoc, updateDoc, doc, getDoc, deleteDoc } from "firebase/firestore";
 import router from "@/router";
 
@@ -140,6 +141,17 @@ export default {
                 );
             }, 2000);
         },
+        deleteImage() {
+            if (this.sparePart.imgUrl) {
+                const storage = getStorage();
+                // Create a reference to the file to delete
+                const desertRef = ref(storage, `assets/${this.sparePart.code}.jpg`);
+                // Delete the file
+                deleteObject(desertRef).then(() => {
+                    // File deleted successfully
+                })
+            }
+        },
         resetPart() {
             this.sparePart = {
                 name: "",
@@ -162,7 +174,7 @@ export default {
                 if (this.id) {
                     router.push("/spare-parts-page")
                 }
-            }, 2001);
+            }, 1000);
         },
         savePart() {
             this.uploadImage();
@@ -184,6 +196,7 @@ export default {
                 if (password == null) break;
                 else if (password == 1234) {
                     deleteDoc(this.docRef);
+                    this.deleteImage();
                     setTimeout(() => {
                         router.push("/spare-parts-page")
                     }, 1000);
@@ -197,10 +210,18 @@ export default {
                 return element.charAt(0).toLocaleUpperCase("tr") + element.slice(1);
             });
             return fixedArr.join(" ");
+        },
+        copy() {
+            let text = document.createElement("textarea");
+            document.body.appendChild(text);
+            text.value = this.sparePart.code+".jpg";
+            text.select();
+            document.execCommand("copy");
+            document.body.removeChild(text);
         }
     },
     watch: {
-        "sparePart.name"() { this.sparePart.name = this.capitalized(this.sparePart.name.toLowerCase()) },
+        "sparePart.name"() { this.sparePart.name = this.capitalized(this.sparePart.name.toLocaleLowerCase("tr")) },
         "sparePart.code"() { this.sparePart.code = this.sparePart.code.toUpperCase() },
         "sparePart.explanation"() { this.sparePart.explanation = this.capitalized(this.sparePart.explanation.toLocaleLowerCase()) },
     },
