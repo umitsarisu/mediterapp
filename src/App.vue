@@ -1,41 +1,26 @@
 <template>
   <div>
     <NavBar class="navbar-position p-0"></NavBar>
-    <keep-alive>
-      <router-view style="padding-left: 10px; align-content: flex-start;"></router-view>
-    </keep-alive>
-    <ModalVue>
-      <ContextVue></ContextVue>
-    </ModalVue>
+    <router-view style="padding-left: 10px; align-content: flex-start;" v-slot="{ Component }">
+      <keep-alive>
+        <component :is="Component" :key="$route.fullPath"></component>
+      </keep-alive>
+    </router-view>
   </div>
 </template>
 
 <script>
-import NavBar from './pages/NavBar.vue';
-// import ModalVue from './pages/Modal.vue';
-//From Copy Paste
-// import ContextVue from './pages/copy-paste/main/modal-contents/Context.vue';
-// //From Nav Bar
-// import MagnifyingGlass from './pages/forms/MagnifyingGlass.vue';
-// import RandomValueGenerator from './pages/forms/RandomValueGenerator.vue';
+import NavBar from '@/components/NavBar.vue';
 export default {
-  created() {
-    // this.$store.dispatch("getData")
-  },
   components: {
-    // Navbar Component
     NavBar,
-    // Modal Components From Copy Paste
-    // ModalVue,
-    // ContextVue,
-    // // Modal Components From Navbar
-    // MagnifyingGlass,
-    // RandomValueGenerator
   }
 }
 </script>
 
 <style>
+@import './general.css';
+
 body::-webkit-scrollbar {
   width: 0 !important
 }
@@ -46,7 +31,7 @@ body::-webkit-scrollbar {
   height: 100%;
   display: flex;
   flex-direction: column;
-  left: -260px;
+  /* left: -260px; */
   background-color: #222222 !important;
 }
 

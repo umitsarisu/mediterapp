@@ -16,7 +16,7 @@
                         aria-label="Search" autocomplete="off">
                 </div>
                 <div class="d-flex justify-content-center">
-                    <router-link class="btn btn-warning mt-2 text-center d-block" :to="'/new-part'">Yeni
+                    <router-link class="btn btn-warning mt-2 text-center d-block" :to="'/spare-parts-page/new-part'">Yeni
                         Parça Ekle</router-link>
                 </div>
             </div>
@@ -35,8 +35,9 @@
                 </div>
                 <div class="card-footer d-flex justify-content-between" name="ydkDefinition">
                     {{ sparePart.definition }}
-                    <router-link :to="`update/${sparePart.id}`"><i class="fa fa-edit"
-                            style="cursor: pointer;"></i></router-link>
+                    <router-link :to="`/spare-parts-page/update/${sparePart.id}`">
+                        <i class="fa fa-edit" style="cursor: pointer;"></i>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -50,7 +51,6 @@ export default {
     data() {
         return {
             searchText: "",
-            partList: [],
             spareParts: [],
             fixingPart: null,
             selectedDefinition: "Bütün Parçalar",
@@ -134,9 +134,11 @@ span {
 hr {
     margin: 5px;
 }
-.fa{
+
+.fa {
     font-style: italic;
 }
+
 .bar {
     background-color: #bea7a4;
     padding: 5px;

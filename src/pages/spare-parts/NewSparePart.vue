@@ -24,7 +24,7 @@
                             <div class="input-group justify-content-evenly">
                                 <label class="input-group-text" for="code">Stok Kodu: </label>
                                 <input class="form-control" type="text" id="code" v-model.trim="sparePart.code" required
-                                    @click="copy">
+                                    @dblclick="copy">
                             </div>
                             <div class="input-group justify-content-evenly">
                                 <label class="input-group-text" for="model">Cihaz Modeli: </label>
@@ -73,7 +73,8 @@
                                 <button type="submit" class="btn btn-success my-3 justify-content-center">Kaydet</button>
                             </div>
                             <div class="text-center">
-                                <a class="text-danger" @click.prevent="deletePart" style="cursor: pointer;">Parçayı silmek
+                                <a class="text-danger" @click.prevent="deletePart" v-if="id"
+                                    style="cursor: pointer;">Parçayı silmek
                                     için tıklayın!</a>
                             </div>
                         </div>
@@ -214,7 +215,7 @@ export default {
         copy() {
             let text = document.createElement("textarea");
             document.body.appendChild(text);
-            text.value = this.sparePart.code+".jpg";
+            text.value = this.sparePart.code + ".jpg";
             text.select();
             document.execCommand("copy");
             document.body.removeChild(text);
@@ -223,7 +224,7 @@ export default {
     watch: {
         "sparePart.name"() { this.sparePart.name = this.capitalized(this.sparePart.name.toLocaleLowerCase("tr")) },
         "sparePart.code"() { this.sparePart.code = this.sparePart.code.toUpperCase() },
-        "sparePart.explanation"() { this.sparePart.explanation = this.capitalized(this.sparePart.explanation.toLocaleLowerCase()) },
+        "sparePart.explanation"() { this.sparePart.explanation = this.capitalized(this.sparePart.explanation.toLocaleLowerCase("tr")) },
     },
     created() {
         this.id = this.$route.params.partId;

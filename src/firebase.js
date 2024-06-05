@@ -22,5 +22,6 @@ const db = getFirestore();
 const storage = getStorage(app);
 const sparePartsCollection = collection(db, "spare-parts");
 const currentCodesCollection = collection(db, "current-codes");
+const listNumbersCollection = collection(db, "list-numbers");
 const auth = getAuth();
-export { storage, db, auth, sparePartsCollection, currentCodesCollection }
+export { storage, db, auth, sparePartsCollection, currentCodesCollection, listNumbersCollection }
