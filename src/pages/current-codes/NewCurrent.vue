@@ -8,7 +8,7 @@
                             <div class="col-10 col-md-8 col-lg-7 col-xl-6 py-3 px-5 position-relative"
                                 style="background-color: #e9ecef;">
                                 <button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Close"
-                                    @click="setIsNewCurrent(false); resetPart()"></button>
+                                    @click="resetPart()"></button>
                                 <h3 class="text-center">{{ id ? "Update" : "Yeni Cari" }}</h3>
                                 <div class="input-group justify-content-evenly">
                                     <label class="input-group-text" for="code">Cari Kodu: </label>
@@ -74,9 +74,6 @@ export default {
             setTimeout(() => {
                 this.isAlert = false;
                 this.resetPart();
-                if (this.id) {
-                    router.push("/current-codes-page")
-                }
             }, 1000);
         },
         resetPart() {
@@ -85,6 +82,7 @@ export default {
                 code: "",
                 location: ""
             }
+            router.push("/current-codes-page")
         },
         saveCurrent() {
             addDoc(currentCodesCollection, {
@@ -137,29 +135,10 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 .btn-close {
     border: 2px solid #333;
     border-radius: 5px;
     padding: 5px;
-}
-
-.saveAlert {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    margin: auto;
-    width: 100%;
-    height: 80vh;
-    background-color: rgba(157, 195, 226, 0.316);
-}
-
-.saveAlert .alert {
-    width: 400px;
-    line-height: 50px;
-    text-align: center;
-    background-color: rgb(65, 166, 255);
-    color: white;
-    font-size: 1.4em;
 }
 </style>

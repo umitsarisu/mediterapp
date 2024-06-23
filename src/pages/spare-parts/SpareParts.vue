@@ -1,5 +1,6 @@
 <template>
-    <div class="mb-3">
+    <div class="mb-3 position-relative">
+        <!-- Filter and Search -->
         <div class="container">
             <div class="bar">
                 <div class="input-group">
@@ -21,12 +22,14 @@
                 </div>
             </div>
         </div>
+        <!-- Spare Part's Cards -->
         <div class="container d-flex flex-wrap justify-content-around mt-2">
             <div class="card shadow" v-for="sparePart in filteredSpareParts">
                 <div class="card-body">
+                    <img :src="sparePart.imgUrl" class="card-img-top img img-thumbnail" :alt="sparePart.alt">
                     <div class="text-center ">
-                        <img :src="sparePart.imgUrl" class="card-img-top img img-thumbnail" :alt="sparePart.alt">
-                        <h3 class="partName align-content-center text-dark">{{ sparePart.name }}</h3>
+                        <h3 class="partName align-content-center text-dark" @click="copy(sparePart)">{{ sparePart.name }}
+                        </h3>
                         <p class="fw-bold" name="ydkCode">{{ sparePart.code }}</p>
                         <hr>
                         <p name="ydkCode">{{ sparePart.model }}</p>
@@ -36,9 +39,14 @@
                 <div class="card-footer d-flex justify-content-between" name="ydkDefinition">
                     {{ sparePart.definition }}
                     <router-link :to="`/spare-parts-page/update/${sparePart.id}`">
-                        <i class="fa fa-edit" style="cursor: pointer;"></i>
+                        <i class="fa fa-edit" style="cursor: pointer;" @click="setIndex(sparePart.id)"></i>
                     </router-link>
                 </div>
+            </div>
+        </div>
+        <div class="row saveAlert" v-if="isAlert">
+            <div class="col-12 col-lg-8 m-auto d-flex justify-content-center">
+                <div class="alert alert-primary m-0">Kopyalandı</div>
             </div>
         </div>
     </div>
@@ -54,9 +62,12 @@ export default {
             spareParts: [],
             fixingPart: null,
             selectedDefinition: "Bütün Parçalar",
-            definitions: ["Kasalar", "Vidalar", "Kartlar", "Etiketler", "Kablolar", "Diğer"]
+            isAlert: false,
+            idList: []
         }
     },
+    // from views/SparePartsPage.vue
+    props: ["definitions"],
     computed: {
         filteredSpareParts() {
             if (this.searchText) {
@@ -83,6 +94,25 @@ export default {
                 return element.charAt(0).toLocaleUpperCase("tr") + element.slice(1);
             });
             return fixedArr.join(" ");
+        },
+        copy(sparePart) {
+            let text = document.createElement("textarea");
+            document.body.appendChild(text);
+            text.value = `${sparePart.name} - ${sparePart.code} Adet: `;
+            text.select();
+            document.execCommand("copy");
+            document.body.removeChild(text);
+            this.alert("Kopyalandı")
+        },
+        alert() {
+            this.isAlert = true;
+            setTimeout(() => {
+                this.isAlert = false;
+            }, 300);
+        },
+        setIndex(id) {
+            const curentIndex = this.idList.indexOf(id)
+            localStorage.setItem('index', curentIndex)
         }
     },
     watch: {
@@ -95,9 +125,12 @@ export default {
             .then(snapshot => {
                 const docsLength = snapshot.docs.length;
                 snapshot.docs.forEach((doc, i) => {
-                    //veritabanındaki referans veriyi atlamak için index 1 den başlıyor
-                    if (i != docsLength - 1) this.spareParts.push({ ...doc.data(), id: doc.id })
+                    //veritabanındaki referans boş veriyi atlıyor.
+                    if (doc.data().name != "") this.spareParts.push({ ...doc.data(), id: doc.id })
+                    this.idList.push(doc.id)
+                    // if (i >= 0 && i < 10) this.spareParts.push({ ...doc.data(), id: doc.id })
                 })
+                localStorage.setItem("idList", this.idList)
             })
     }
 }
@@ -133,6 +166,14 @@ span {
 
 hr {
     margin: 5px;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+h3:hover {
+    border: 1px solid salmon;
 }
 
 .fa {

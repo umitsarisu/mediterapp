@@ -6,7 +6,7 @@
         <hr>
         <ul class="nav flex-column">
             <li class="nav-item ms-2">
-                <router-link active-class="active" exact class="nav-link text-white" :to="'/copy-paste'">
+                <router-link active-class="active" exact class="nav-link text-white" :to="'/copy-paste-page'">
                     <i class="fa fa-copy fa-lg fa-fw ms-2"></i>
                     Kopyala Yapıştır
                 </router-link>

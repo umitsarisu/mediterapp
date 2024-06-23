@@ -1,35 +1,67 @@
-#backwardButton {
+#backwardButton,
+#forwardButton {
     position: absolute;
     top: 0;
-    left: 0;
     background-color: transparent;
     height: 100%;
     padding: 3px;
     border: 2px solid transparent;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+#backwardButton {
+    left: 0;
     margin-left: 10px;
 }
 
-#backwardButton:hover {
+#forwardButton {
+    right: 0;
+    margin-right: 10px;
+}
+
+#backwardButton:hover,
+#forwardButton:hover {
     background-color: rgba(128, 128, 128, 0.5);
 }
 
-#backwardButton:active {
+#backwardButton:active,
+#forwardButton:active {
     border: 2px coral solid;
 }
 
-#backwardButton img {
+#backwardButton img,
+#forwardButton img {
     width: 5vh;
     padding: 0;
     cursor: pointer;
 }
 
-#backwardButton span {
+#backwardButton span,
+#forwardButton span {
     line-height: 5vh;
     font-size: 1.2em;
     font-weight: bold;
     color: #212529;
     text-shadow: #4c0000 1px 1px 2px;
 
+}
+
+.saveAlert {
+    position: fixed;
+    top: 10%;
+    z-index: 1;
+    margin: auto;
+    width: 87%;
+    height: 80%;
+    background-color: rgba(157, 195, 226, 0.316);
+}
+
+.saveAlert .alert {
+    width: 400px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(65, 166, 255);
+    color: white;
+    font-size: 1.4em;
 }

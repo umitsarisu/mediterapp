@@ -39,20 +39,24 @@
             </div>
         </div>
         <!-- Current List -->
-        <div class="col-12 col-lg-10 m-auto p-0 mt-3 shadow1">
+        <div class="col-12 col-lg-10 m-auto p-0 mt-3 mb-4 shadow1">
             <h4 class="ps-3 m-0 border1">Hastaneler</h4>
-            <div class="d-flex  justify-content-between striped overflow-hidden"
-                v-for="(currentCode, i) in filteredCurrentCodes">
-                <div class="d-flex">
-                    <h5 style="width: 40px;" class="text-center line-height m-0">{{ i + 1 }}.</h5>
-                    <button type="button" @click="copy(currentCode.code)"
-                        class="btn mtb-0 btn-outline-primary">Copy</button>
-                    <span style="width: 100px;" class="text-center line-height">{{ currentCode.code }}</span>
-                    <button type="button" @click="copy(currentCode.name)" class="btn mtb-0 btn-outline-danger">Copy</button>
-                    <span style="min-width: 200px; white-space: nowrap;" class="line-height text-start ms-3 overflow-hidden">{{ currentCode.name
-                    }}</span>
+            <div class="row striped m-0" v-for="(currentCode, i) in filteredCurrentCodes">
+                <div class="col-12 col-md-8 p-0 d-flex overflow-hidden">
+                    <div class="d-flex">
+                        <h5 style="width: 40px;" class="text-center line-height m-0">{{ i + 1 }}.</h5>
+                        <button type="button" @click="copy(currentCode.code)"
+                            class="btn mtb-0 btn-outline-primary">Copy</button>
+                        <span style="width: 100px;" class="text-center line-height">{{ currentCode.code }}</span>
+                        <button type="button" @click="copy(currentCode.name)"
+                            class="btn mtb-0 btn-outline-danger">Copy</button>
+                    </div>
+                    <div>
+                        <span style="white-space: nowrap;" class="line-height text-start ms-3">{{
+                            currentCode.name }}</span>
+                    </div>
                 </div>
-                <div class="d-none d-md-flex justify-content-between ms-auto" style="width: 300px;">
+                <div class="d-none d-md-flex col-md-4 p-0 justify-content-between">
                     <span class="ps-4 line-height" style="border-left: #eee 3px solid;">
                         {{ currentCode.location }}</span>
                     <div>
@@ -171,7 +175,7 @@ h4 {
 }
 
 button {
-    margin: 1px 5px;
+    margin: 1px;
     background-color: white;
 }
 
@@ -196,5 +200,4 @@ button {
     color: rgb(13, 110, 253);
     font-style: italic;
 }
-
 </style>

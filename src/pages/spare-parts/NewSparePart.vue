@@ -55,22 +55,42 @@
                                         v-model.capitalize="sparePart.test">
                                 </li>
                                 <li class="list-group-item text-center" v-if="sparePart.test">
-                                    <div class="alert alert-warning" role="alert" v-if="this.sparePart.viCode">
-                                        {{ this.sparePart.viCode }} seçildi!
+                                    <div class="alert alert-warning" role="alert" v-if="sparePart.viCode">
+                                        {{ sparePart.viCode }} seçildi!
                                     </div>
                                     <span>Opsiyonel: </span>
                                     <div class="btn-group" role="group">
                                         <input type="radio" class="btn-check" name="viCode" id="122"
-                                            @click="this.sparePart.viCode = 122">
+                                            @click="sparePart.viCode = 122">
                                         <label class="btn btn-outline-danger" for="122">122</label>
                                         <input type="radio" class="btn-check" name="viCode" id="141"
-                                            @click="this.sparePart.viCode = 141">
+                                            @click="sparePart.viCode = 141">
                                         <label class="btn btn-outline-danger" for="141">141</label>
+                                        <div class="btn btn-outline-warning ms-2 text-danger" @click="deleteViCode">
+                                            <i class="fa fa-close"></i>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
-                            <div class="d-flex justify-content-center">
+                            <ul class="list-group mt-2">
+                                <li class="list-group-item text-center">
+                                    <label class="form-check-label pe-2" for="isAvailable">
+                                        Kopyala Yapıştır'da kullanılıyor mu?
+                                    </label>
+                                    <input class="form-check-input" id="isAvailable" @change="setAvailable" type="checkbox"
+                                        v-model.capitalize="sparePart.isAvailable">
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-outline-secondary my-3 justify-content-center"
+                                    @click="previous">
+                                    <img class="btnNextImg" src="@/assets/backward.png">
+                                </button>
                                 <button type="submit" class="btn btn-success my-3 justify-content-center">Kaydet</button>
+                                <button type="button" class="btn btn-outline-secondary my-3 justify-content-center"
+                                    @click="next">
+                                    <img class="btnNextImg" src="@/assets/forward.png">
+                                </button>
                             </div>
                             <div class="text-center">
                                 <a class="text-danger" @click.prevent="deletePart" v-if="id"
@@ -105,6 +125,7 @@ export default {
                 model: "",
                 definition: "",
                 explanation: "",
+                isAvailable: false,
                 imgUrl: "",
                 test: "",
                 viCode: ""
@@ -114,9 +135,12 @@ export default {
             isAlert: false,
             id: "",
             docRef: "",
-            definitions: ["Kasalar", "Vidalar", "Kartlar", "Etiketler", "Kablolar", "Diğer"]
+            idList: [],
+            index: null
         }
     },
+    // from views/SparePartsPage.vue
+    props: ["definitions"],
     methods: {
         setImageUrl(event) {
             const inputTypes = ["image/png", "image/jpeg"]
@@ -160,6 +184,7 @@ export default {
                 model: "",
                 definition: "",
                 explanation: "",
+                isAvailable: false,
                 imgUrl: "",
                 test: "",
                 viCode: ""
@@ -171,9 +196,11 @@ export default {
             this.isAlert = true;
             setTimeout(() => {
                 this.isAlert = false;
-                this.resetPart();
                 if (this.id) {
-                    router.push("/spare-parts-page")
+                    this.next()
+                }
+                else {
+                    this.resetPart();
                 }
             }, 1000);
         },
@@ -199,9 +226,23 @@ export default {
                     deleteDoc(this.docRef);
                     this.deleteImage();
                     setTimeout(() => {
-                        router.push("/spare-parts-page")
+                        router.push("/spare-parts-page/new-part")
                     }, 1000);
                     break;
+                }
+            }
+        },
+        setAvailable() {
+            if (this.sparePart.isAvailable) {
+                while (true) {
+                    let password = prompt("Parolayı girin:");
+                    if (password == null) {
+                        this.sparePart.isAvailable = false;
+                        break;
+                    }
+                    else if (password == 1234) {
+                        break;
+                    }
                 }
             }
         },
@@ -219,6 +260,30 @@ export default {
             text.select();
             document.execCommand("copy");
             document.body.removeChild(text);
+        },
+        deleteViCode() {
+            this.sparePart.viCode = '';
+            this.sparePart.test = ''
+        },
+        next() {
+            if (this.index < this.idList.length - 1) {
+                this.index = this.index + 1
+                localStorage.setItem("index", this.index)
+                router.push(`/spare-parts-page/update/${this.idList[this.index]}`)
+                setTimeout(() => {
+                    location.reload();
+                }, 50);
+            }
+        },
+        previous() {
+            if (this.index != 0) {
+                this.index = this.index - 1
+                localStorage.setItem("index", this.index)
+                router.push(`/spare-parts-page/update/${this.idList[this.index]}`)
+                setTimeout(() => {
+                    location.reload();
+                }, 50);
+            }
         }
     },
     watch: {
@@ -234,6 +299,9 @@ export default {
                 this.sparePart = snapshot.data()
             })
         }
+        this.idList = localStorage.getItem("idList").split(",")
+        this.index = Number(localStorage.getItem("index"))
+        console.log(this.index)
     }
 }
 </script>
@@ -243,14 +311,19 @@ form {
 }
 
 img,
-i {
+i.fa-wrench {
     width: 200px;
     height: 200px;
     display: block;
     margin: auto;
 }
 
-i {
+.btnNextImg {
+    width: 50px;
+    height: 24px;
+}
+
+i.fa-wrench {
     background-color: gray;
 }
 
@@ -261,24 +334,5 @@ hr {
 .input-group,
 ul {
     margin-top: 5px;
-}
-
-.saveAlert {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    margin: auto;
-    width: 100%;
-    height: 90%;
-    background-color: rgba(157, 195, 226, 0.316);
-}
-
-.saveAlert .alert {
-    width: 400px;
-    line-height: 50px;
-    text-align: center;
-    background-color: rgb(65, 166, 255);
-    color: white;
-    font-size: 1.4em;
 }
 </style>

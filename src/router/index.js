@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import CopyPaste from "../pages/copy-paste/CopyPaste.vue"
+import CopyPastePage from "@/views/CopyPastePage"
+import CopyPaste from "@/pages/copy-paste/main/CopyPaste"
+import ResultPage from "@/pages/copy-paste/result/ResultPage"
 import MagnifyingGlass from "@/views/MagnifyingGlass"
 import RandomValueGenerator from "@/views/RandomValueGenerator"
 import RunInPage from "@/views/RunInPage"
@@ -13,22 +15,27 @@ import NewCurrent from "@/pages/current-codes/NewCurrent"
 import CurrentList from "@/pages/current-codes/CurrentList"
 
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'home',
-  //   component: HomeView
-  // },
-  // { path: "/copy-paste", component: CopyPaste },
-  { path: "/magnifying-glass", component: MagnifyingGlass },
-  { path: "/random-value-generator", component: RandomValueGenerator },
-  { path: "/run-in-page", component: RunInPage },
   {
-    path: "", component: CurrentCodesPage,
+    path: "/:catchAll(.*)",
+    redirect: "/"
+  },
+  {
+    path: "/copy-paste-page",
+    component: CopyPastePage,
     children: [
-      { path: "", component: CurrentList },
+      { path: "", component: CopyPaste },
+      { path: "/copy-paste-page/result-page", component: ResultPage },
     ]
   },
-  { path: "/sign-up", component: SignUpPage },
+  {
+    path: "/",
+    component: CurrentCodesPage,
+    redirect: "/current-codes-page"
+  },
+  {
+    path: "/sign-up",
+    component: SignUpPage
+  },
   {
     path: "/current-codes-page",
     component: CurrentCodesPage,
@@ -47,7 +54,18 @@ const routes = [
       { path: "/spare-parts-page/new-part", component: NewSparePart },
     ]
   },
-
+  {
+    path: "/magnifying-glass",
+    component: MagnifyingGlass
+  },
+  {
+    path: "/random-value-generator",
+    component: RandomValueGenerator
+  },
+  {
+    path: "/run-in-page",
+    component: RunInPage
+  },
 ]
 
 const router = createRouter({
