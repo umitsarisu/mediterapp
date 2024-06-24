@@ -197,7 +197,7 @@ export default {
             setTimeout(() => {
                 this.isAlert = false;
                 if (this.id) {
-                    this.next()
+                    // this.next()
                 }
                 else {
                     this.resetPart();
