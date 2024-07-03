@@ -1,5 +1,5 @@
 <template>
-    <form class=" lr-white-border bottom-white-border overflow-scroll">
+    <form class="lr-white-border bottom-white-border overflow-scroll">
         <div class="px-2 pt-1">
             <div class="text-center w-100">
                 <div class="modal-header flex-column">
@@ -22,18 +22,17 @@
 </template>
 <script>
 import SparePartsVue from "./SpareParts.vue";
-import { sparePartsCollection } from '@/firebase';
-import { getDocs } from 'firebase/firestore'
+
 export default {
     data() {
         return {
             searchText: "",
-            spareParts: []
         }
     },
     components: {
         SparePartsVue,
     },
+    props: ["spareParts"],
     computed: {
         filteredSpareParts() {
             const searchText = this.searchText.toLocaleLowerCase('tr');
@@ -44,16 +43,6 @@ export default {
                 ) return part
             })
         }
-    },
-    mounted() {
-        getDocs(sparePartsCollection)
-            .then(snapshot => {
-                const docsLength = snapshot.docs.length;
-                snapshot.docs.forEach((doc, i) => {
-                    //veritabanındaki referans veriyi atlamak için index 1 den başlıyor
-                    if (i != docsLength - 1) this.spareParts.push({ ...doc.data(), id: doc.id, activeClass: "bg-light" })
-                })
-            })
     }
 }
 </script>

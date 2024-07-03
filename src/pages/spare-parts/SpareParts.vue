@@ -22,6 +22,7 @@
                 </div>
             </div>
         </div>
+        <LoadingSpinner v-if="isLoading"></LoadingSpinner>
         <!-- Spare Part's Cards -->
         <div class="container d-flex flex-wrap justify-content-around mt-2">
             <div class="card shadow" v-for="sparePart in filteredSpareParts">
@@ -34,6 +35,7 @@
                         <hr>
                         <p name="ydkCode">{{ sparePart.model }}</p>
                         <p> {{ sparePart.explanation }}</p>
+                        <p class="text-danger">{{ sparePart.isAvailable ? "Copy Paste Unit" : "" }}</p>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between" name="ydkDefinition">
@@ -54,20 +56,24 @@
 <script>
 import { sparePartsCollection } from '@/firebase';
 import { getDocs } from 'firebase/firestore'
-
+import LoadingSpinner from '@/components/LoadingSpinner.vue';
 export default {
     data() {
         return {
-            searchText: "",
             spareParts: [],
+            searchText: "",
             fixingPart: null,
             selectedDefinition: "Bütün Parçalar",
             isAlert: false,
-            idList: []
+            idList: [],
+            isLoading: true
         }
     },
     // from views/SparePartsPage.vue
     props: ["definitions"],
+    components: {
+        LoadingSpinner
+    },
     computed: {
         filteredSpareParts() {
             if (this.searchText) {
@@ -121,17 +127,27 @@ export default {
         },
     },
     mounted() {
-        getDocs(sparePartsCollection)
-            .then(snapshot => {
-                const docsLength = snapshot.docs.length;
-                snapshot.docs.forEach((doc, i) => {
-                    //veritabanındaki referans boş veriyi atlıyor.
-                    if (doc.data().name != "") this.spareParts.push({ ...doc.data(), id: doc.id })
-                    this.idList.push(doc.id)
-                    // if (i >= 0 && i < 10) this.spareParts.push({ ...doc.data(), id: doc.id })
+        if (this.$store.state.spareParts.length == 0) {
+            getDocs(sparePartsCollection)
+                .then(snapshot => {
+                    const docsLength = snapshot.docs.length;
+                    snapshot.docs.forEach((doc, i) => {
+                        //veritabanındaki referans boş veriyi atlıyor.
+                        if (doc.data().name != "") this.spareParts.push({ ...doc.data(), id: doc.id })
+                        this.idList.push(doc.id)
+                        // if (i >= 0 && i < 10) this.spareParts.push({ ...doc.data(), id: doc.id })
+                    })
+                    localStorage.setItem("idList", this.idList)
+                    this.isLoading = false
                 })
-                localStorage.setItem("idList", this.idList)
-            })
+                .then(() => {
+                    this.$store.commit("setSpareParts", this.spareParts);
+                })
+        }
+        else {
+            this.spareParts = this.$store.state.spareParts;
+            this.isLoading = false;
+        }
     }
 }
 </script>

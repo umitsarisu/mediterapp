@@ -14,6 +14,7 @@
                 <input maxlength="8" minlength="8" class="form-control my-2" placeholder="List Number" required
                     autocomplete="off" v-model="listNumber" disabled>
                 <input type="submit" class="form-control btn btn-danger" value="Gönder" />
+                <p class="text-primary text-end" style="cursor: pointer;" @click="bringOldForm">Son Formu Getir</p>
             </div>
             <div v-if="isUpdate">
                 <ul class="list-group">
@@ -40,12 +41,13 @@
                 <h1>Pano</h1>
                 <button id="yazdır3" class="btn btn-secondary"><i class="fa fa-print" aria-hidden="true"></i>
                     Yazdır</button>
-                <button id="excel" class="btn btn-secondary"><i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                <button id="excel" class="btn btn-secondary" @click="excel"><i class="fa fa-file-excel-o"
+                        aria-hidden="true"></i>
                     Excel'e Aktar
                 </button>
             </div>
             <PanoVue style="max-height: 300px;" class="shadow1">
-                <table class="table table-striped table-bordered table-hover" style="width:99%">
+                <table class="table table-striped table-bordered table-hover" style="width:99%" id="pano">
                     <thead>
                         <th>No</th>
                         <th>Liste Numarası</th>
@@ -75,6 +77,7 @@
 import PanoVue from '@/components/Pano.vue'
 import { db, listNumbersCollection } from "@/firebase";
 import { updateDoc, doc, getDocs } from "firebase/firestore";
+import xlsx from "../../node_modules/xlsx/dist/xlsx.full.min.js"
 export default {
     data() {
         return {
@@ -84,7 +87,8 @@ export default {
             deviceList: [],
             isUpdate: false,
             isAlert: false,
-            alertMessage: ""
+            alertMessage: "",
+            framework: []
         }
     },
     methods: {
@@ -96,6 +100,10 @@ export default {
                     save = false;
                 }
             })
+            if (this.listNumber == "") {
+                this.alert("Seri numarası hatalı")
+                return false
+            }
             if (save) {
                 this.deviceList.push(
                     {
@@ -103,6 +111,7 @@ export default {
                         listNumber: this.listNumber
                     }
                 )
+                localStorage.setItem("deviceList", JSON.stringify(this.deviceList))
                 this.serialNumber = ""
             }
         },
@@ -124,6 +133,41 @@ export default {
                 updateDoc(docRef, { ...this.listNumbers[i] })
             }
             this.alert("Kayıt Edildi");
+        },
+        excel() {
+            this.framework.push(["No", "List Number", "Serial Number"])
+            this.deviceList.map((item, index) => {
+                this.framework.push([index + 1, item.listNumber, item.serialNumber])
+            })
+            console.log(this.framework)
+            const XLSX = xlsx;
+            const workbook = XLSX.utils.book_new();
+            const worksheet = XLSX.utils.aoa_to_sheet(this.framework);
+            XLSX.utils.book_append_sheet(workbook, worksheet, "framework")
+            XLSX.writeFile(workbook, "run-in-list.xlsx")
+        },
+        print() {
+            //Yazdır Butonu
+            //         $("#yazdır").on("click", () => {
+            //             const divToPrint = document.getElementById("pano");
+            //             let htmlToPrint = `
+            //     <style type="text/css">
+            //         table, tr, th, td {
+            //             border:1px solid #999;
+            //             border-collapse: collapse;
+            //             padding:0.5em;
+            //         }
+            //     </style>
+            // `;
+            //             htmlToPrint += divToPrint.outerHTML;
+            //             let newWin = window.open("");
+            //             newWin.document.write(htmlToPrint);
+            //             newWin.print();
+            //             newWin.close();
+            //         });
+        },
+        bringOldForm() {
+            this.deviceList = JSON.parse(localStorage.getItem("deviceList"))
         }
     },
     components: {

@@ -186,7 +186,7 @@ export default {
                 explanation: "",
                 isAvailable: false,
                 imgUrl: "",
-                test: "",
+                test: false,
                 viCode: ""
             };
             this.imageUrl = "";
@@ -205,44 +205,40 @@ export default {
             }, 1000);
         },
         savePart() {
-            this.uploadImage();
-            addDoc(sparePartsCollection, {
-                ...this.sparePart
-            })
-            this.alert();
+            if (this.checkPassword()) {
+                this.uploadImage();
+                addDoc(sparePartsCollection, {
+                    ...this.sparePart
+                })
+                this.alert();
+            }
         },
         updatePart() {
-            if (this.imageUrl) {
-                this.uploadImage()
+            if (this.checkPassword()) {
+                if (this.imageUrl) {
+                    this.uploadImage()
+                }
+                updateDoc(this.docRef, { ...this.sparePart })
+                this.alert();
             }
-            updateDoc(this.docRef, { ...this.sparePart })
-            this.alert();
         },
         deletePart() {
-            while (true) {
-                let password = prompt("Parolayı girin:");
-                if (password == null) break;
-                else if (password == 1234) {
-                    deleteDoc(this.docRef);
-                    this.deleteImage();
-                    setTimeout(() => {
-                        router.push("/spare-parts-page/new-part")
-                    }, 1000);
-                    break;
-                }
+            if (this.checkPassword()) {
+                deleteDoc(this.docRef);
+                this.deleteImage();
+                setTimeout(() => {
+                    router.push("/spare-parts-page/new-part")
+                }, 1000);
             }
         },
-        setAvailable() {
-            if (this.sparePart.isAvailable) {
-                while (true) {
-                    let password = prompt("Parolayı girin:");
-                    if (password == null) {
-                        this.sparePart.isAvailable = false;
-                        break;
-                    }
-                    else if (password == 1234) {
-                        break;
-                    }
+        checkPassword() {
+            while (true) {
+                let password = prompt("Parolayı girin:");
+                if (password == null) {
+                    return false
+                }
+                else if (password == 2318) {
+                    return true
                 }
             }
         },

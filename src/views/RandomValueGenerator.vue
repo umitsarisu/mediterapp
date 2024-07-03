@@ -7,14 +7,18 @@
                 </header>
                 <div class="d-flex justify-content-around align-items-center p-3 border-bottom">
                     <div class="rvg-box p-3">
-                        <button type="button" class="btn btn1 btn-outline-dark align-self-center" title="0 PSI değeri"
-                            @click="copy(rvgObj.psi1)">
-                            {{ rvgObj.psi1 }}
-                        </button>
-                        <button type="button" class="btn btn1 btn-outline-dark align-self-center mt-3" title="10 PSI değeri"
-                            @click="copy(rvgObj.psi2)">
-                            {{ rvgObj.psi2 }}
-                        </button>
+                        <div class="m-auto">
+                            <button type="button" class="btn btn-outline-dark align-self-center" title="0 PSI değeri"
+                                @click="copy(rvgObj.psi1)">
+                                {{ rvgObj.psi1 }}
+                            </button>
+                        </div>
+                        <div class="m-auto mt-3">
+                            <button type="button" class="btn btn-outline-dark align-self-center" title="10 PSI değeri"
+                                @click="copy(rvgObj.psi2)">
+                                {{ rvgObj.psi2 }}
+                            </button>
+                        </div>
                     </div>
                     <div class="rvg-box">
                         <h5>PVT</h5>
@@ -60,7 +64,7 @@ export default {
         copy(value) {
             let text = document.createElement("textarea");
             document.body.appendChild(text);
-            text.value = value;
+            text.value = value + " PSI";
             text.select();
             document.execCommand("copy");
             document.body.removeChild(text);
@@ -101,15 +105,16 @@ header {
     box-shadow: 0px 1px 15px 0px #0000008e;
 }
 
-.btn1 {
+.btn {
     border: 1px solid gray;
     width: 80px;
     line-height: 30px;
-    background-color: white;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.btn:focus{
+    transform: scale(1.02);
+}
 p {
     margin: 5px 0;
     line-height: 30px;
