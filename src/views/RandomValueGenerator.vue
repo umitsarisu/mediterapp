@@ -64,7 +64,7 @@ export default {
         copy(value) {
             let text = document.createElement("textarea");
             document.body.appendChild(text);
-            text.value = value + " PSI";
+            text.value = value;
             text.select();
             document.execCommand("copy");
             document.body.removeChild(text);
