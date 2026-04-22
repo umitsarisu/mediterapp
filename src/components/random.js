@@ -27,15 +27,25 @@ function dateFunc() {
 }
 const rvg = () => {
     let rvgObj = {}
+    rvgObj.egt1 = 0;
+    rvgObj.egt2 = 0;
+    rvgObj.egt3 = Math.floor(Math.random() * (17 - 10) + 10);
+    rvgObj.egt4 = Math.floor(Math.random() * (50 - 30) + 30);
+    rvgObj.egt5 = Math.floor(Math.random() * (120 - 70) + 70);
+    let rv6, rv10;
     while (true) {
-        rvgObj.psi1 = Math.random() * (8 - 5) + 5;
-        rvgObj.psi1 = rvgObj.psi1.toFixed(2);
-        rvgObj.psi2 = Math.random() * (12.5 - 10) + 10;
-        rvgObj.psi2 = rvgObj.psi2.toFixed(2);
-        if (rvgObj.psi2 - rvgObj.psi1 > 3.5 && rvgObj.psi2 - rvgObj.psi1 < 5) {
-            break;
+        // rv6: 4 ile 8 arasında
+        rv6 = Math.random() * (8 - 4) + 4;
+        // rv10: 8 ile 12.5 arasında
+        rv10 = Math.random() * (12.5 - 8) + 8;
+        let fark = rv10 - rv6;
+        // Fark kontrolü: min 3.5, max 5
+        if (fark >= 3.5 && fark <= 5) {
+            break; // Şartlar sağlanırsa döngüden çık
         }
     }
+    rvgObj.psi1 = rv6.toFixed(2).replace('.', ',');
+    rvgObj.psi2 = rv10.toFixed(2).replace('.', ',');
     rvgObj.egt1 = 0;
     rvgObj.egt2 = 0;
     rvgObj.egt3 = Math.floor(Math.random() * (17 - 10) + 10);
