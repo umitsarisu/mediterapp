@@ -62,12 +62,8 @@ export default {
             this.rvgObj = Random.rvg();
         },
         copy(value) {
-            let text = document.createElement("textarea");
-            document.body.appendChild(text);
-            text.value = value;
-            text.select();
-            document.execCommand("copy");
-            document.body.removeChild(text);
+            let textToCopy = String(psi).replace('.', ',');
+            navigator.clipboard.writeText(textToCopy);
         }
     },
     created() {
