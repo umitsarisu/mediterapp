@@ -62,8 +62,18 @@ export default {
             this.rvgObj = Random.rvg();
         },
         copy(value) {
-            let textToCopy = String(psi).replace('.', ',');
-            navigator.clipboard.writeText(textToCopy);
+            if (typeof value === 'string' || typeof value === 'number') {
+                // Sadece sayısal kısmı al (PSI kısmını temizle)
+                let cleanValue = String(value)
+                    .replace(/ PSI.*/i, '')           // PSI ve sonrasını sil
+                    .replace('.', ',');               // Nokta → Virgül
+            
+                navigator.clipboard.writeText(cleanValue)
+                    .then(() => {
+                        // Opsiyonel: Başarılı bildirim
+                        console.log('Kopyalandı:', cleanValue);
+                });
+            }
         }
     },
     created() {
